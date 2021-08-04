@@ -1,0 +1,94 @@
+<!--
+Michael Burridge
+16013497
+Creative Technologies Project
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Video</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- scales media player size to device screen -->
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.12.3.min.js"></script>
+
+	<!-- Links to CSS stylesheets and featherlight -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/featherlight.css">
+	<script src="js/featherlight.js"></script>
+
+	<link rel="stylesheet" href="css/interaction.css"> <!-- Link to interaction CSS -->
+
+	<script src="js/interaction.js"></script> <!-- Link to interaction js -->
+
+
+</head>
+<body>
+
+<div class="container"> <!-- Container for media player -->
+
+	<div class="row videoArea"> <!-- Class fpr video area -->
+		<div class="box1"></div> <!-- Class for info box 1 pop up -->
+		<div class="box2"></div> <!-- Class for info box 2 pop up -->
+		<video id="video1" controls autoplay="true"> <!-- Video will autoplay when page is opened -->
+			<source src="media/demo.mp4" type="video/mp4"> <!-- Link to video from files -->
+		</video>
+	</div>
+
+	<div class="row descArea"> <!-- Description area underneath video -->
+		<h5>Interactive POV Demo</h5> <!-- Heading within the description area -->
+		<p>This is a demo of interactive story-telling, the aim of this project was to produce a full experience of up to 12-15 minutes long. Limitations were discovered towards the end of the implementation process, this is spoken about in the artefact report. Although the aim of the project was to be 12-15 minutes long, the most important part of the project was exploring technology used in interactive story-telling.</p> <!-- Paragraph containing the description on the video -->
+<br>
+		<p> Produced by Michael Burridge </p>
+<br>
+		<p> Educational purposes only. </p>
+	</div> <!-- End of description area underneath video -->
+</div> <!-- End of container -->
+
+	<!-- FIRST SCENARIO -->
+	<div class="lightbox popUpScenario1"> <!-- Class for the pathway selection, user will be able to choose between -->
+		<h4>Choose your bike!</h4> <!-- Headomg -->
+		<p> You can choose from a BMX or a Mountain Bike, your choice here will determine what footage you will see throughout this video. </p> <!-- Paragraph containing instructions for the user -->
+		<br> <!-- Break -->
+		<a href='#' class="button longBtns bmxChoice">BMX</a> <!-- Button to choose BMX at the start of the interactive experience -->
+		<a href='#' class="button longBtns mtbChoice">Mountain Bike</a> <!-- Button to choose Mountain Bike at the start of the interactive experience -->
+	</div>
+
+	<div class="lightbox popUpScenario2"> <!-- Class for the pathway selection, user will be able to choose between -->
+		<h4>Choose the trial you want to try out!</h4> <!-- Headomg -->
+		<!-- add description if needed -->
+		<br> <!-- Break -->
+		<a href='#' class="button longBtns bigDipper">Big Dipper</a> <!-- Button to choose BMX at the start of the interactive experience -->
+		<a href='#' class="button longBtns skillsPark">Skills Park</a> <!-- Button to choose Mountain Bike at the start of the interactive experience -->
+	</div>
+
+<!-- INFORMATION POP UP BOX 1st -->
+<div class="lightbox InfoPopUp"> <!-- Using lightbox helps to hide content until its called upon -->
+<!--  <img src="media/BMX.PNG"> Image search for information pop up window-->
+<h5> Mountain Bike </h5>          <!-- This is where to add information about Artwork in Bristol -->
+<p> Locations Visited </p> <!-- -->
+<ul> <!-- Bullet Point List -->
+<li> Bristol, Ashton Court </li> <!-- Bullet Point with information for pop up window -->
+<li> Afan Forest Trail Centre</li> <!-- Bullet Point with information for pop up window  -->
+<li> Afan Forest Skills Park </li> <!-- Bullet Point with information for pop up window -->
+</ul>
+</div>
+
+<!-- INFORMATION POP UP BOX 2nd -->
+<div class="lightbox InfoPopUp2"> <!-- Using lightbox helps to hide content until its called upon -->
+<!-- <img src="MountainBike.jpeg"> Image search for information pop up window-->
+<h5> BMX </h5>          <!-- Heading  -->
+<p> Locations Visited </p>  <!-- used a paragraph for the discription  -->
+<ul> <!-- Bullet Point List -->
+<li> Ashton Pumptrack </li> <!-- Bullet Point with information for pop up window -->
+<li> Bradley Stoke Skatepark </li> <!-- Bullet Point with information for pop up window -->
+<li> Cardiff Street Riding </li> <!-- Bullet Point with information for pop up window -->
+<li> Bristol Street Riding</li> <!-- Bullet Point with information for pop up window -->
+</ul>
+</div> <!-- -->
+
+</body>
+</html>

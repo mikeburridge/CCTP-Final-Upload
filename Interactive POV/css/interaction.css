@@ -1,0 +1,73 @@
+/*
+Michael Burridge
+16013497
+Creative Technologies Project
+*/
+
+body{
+  background-color: #3c4757;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-weight: bold;
+}
+
+p{
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  float: left;
+  margin-right 25px;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+.descArea{
+  background-color: #6e6e6e;
+  box-shadow: 0 0 3px #c8c8c8;
+  padding: 15px;
+  box-sizing: boarder-box;
+}
+
+.videoArea{
+  position: relative;
+}
+
+.box1{
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(40, 169, 220, 0);
+  width: 200px;
+  height: 200px;
+  top: 70px;
+  left: 570px;
+  z-index: 1000;
+}
+
+.box2{
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(207, 50, 53, 0);
+  width: 200px;
+  height: 200px;
+  top: 70px;
+  left: 150px;
+  z-index: 1000;
+}
+
+.lightbox{
+  display: none;
+}
+
+.longBtns{
+  display: block;
+}
